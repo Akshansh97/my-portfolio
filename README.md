@@ -1,7 +1,7 @@
 
 # 🧑‍💻 Akshansh Dubey's Portfolio
 
-Welcome to my personal portfolio repository! This project showcases my journey as a web developer, highlighting my skills, projects, and experiences.
+Welcome to my personal portfolio ! This project showcases my journey as a web developer, highlighting my skills, projects, and experiences.
 
 ---
 
