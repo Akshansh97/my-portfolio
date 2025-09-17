@@ -29,22 +29,15 @@ This portfolio is built using:
 ## 📂 Project Structure
 
 my-portfolio/
+
 ├── public
-
 ├── src
-
 │ ├── components
-
 │ ├── pages
-
 │ ├── App.js
-
 │ └── index.js
-
 ├── .gitignore
-
 ├── package.json
-
 └── README.md
 
 ---
