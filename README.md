@@ -29,15 +29,15 @@ This portfolio is built using:
 ## 📂 Project Structure
 
 my-portfolio/
-├── public/           # Static assets (images, icons, favicon)
-├── src/              # React components and app logic
-│   ├── components/   # Reusable components
-│   ├── pages/        # Portfolio pages like Home, Projects, Contact
-│   ├── App.js        # Main app component
-│   └── index.js      # React DOM render
-├── .gitignore        # Files to ignore in Git
-├── package.json      # Project metadata and dependencies
-└── README.md         # This file
+├── public/ # Static assets (images, icons, favicon)
+├── src/ # React components and app logic
+│ ├── components/ # Reusable components
+│ ├── pages/ # Portfolio pages like Home, Projects, Contact
+│ ├── App.js # Main app component
+│ └── index.js # React DOM render
+├── .gitignore # Files to ignore in Git
+├── package.json # Project metadata and dependencies
+└── README.md # This file
 
 ---
 
