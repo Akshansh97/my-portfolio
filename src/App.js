@@ -32,7 +32,7 @@ const Header = () => {
       </h1>
 
       <nav className={`navbar-row ${isOpen ? "active" : ""}`}>
-        {["about", "projects", "experience", "contact"].map((section, idx) => (
+        {["home", "about", "projects", "experience", "contact"].map((section, idx) => (
           <Link
             key={idx}
             to={section}
