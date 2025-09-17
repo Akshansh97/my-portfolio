@@ -30,13 +30,21 @@ This portfolio is built using:
 
 my-portfolio/
 ├── public
+
 ├── src
+
 │ ├── components
+
 │ ├── pages
+
 │ ├── App.js
+
 │ └── index.js
+
 ├── .gitignore
+
 ├── package.json
+
 └── README.md
 
 ---
