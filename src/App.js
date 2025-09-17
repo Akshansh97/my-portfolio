@@ -41,7 +41,7 @@ const Header = () => {
             offset={-70}
             className="nav-link"
             activeClass="active"
-            onClick={() => setIsOpen(false)} // close menu on click
+            onClick={() => setIsOpen(false)}
           >
             {section.charAt(0).toUpperCase() + section.slice(1)}
           </Link>
@@ -67,7 +67,7 @@ const Home = () => (
           I specialize in building scalable web applications using
           <span className="highlight">
             {" "}
-            Java, Spring Boot, React, and Microservices
+            <br></br>MongoDB, ExpressJS, React, NodeJs, Java, Spring Boot, and Microservices
           </span>
           .
         </p>
