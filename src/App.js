@@ -102,7 +102,7 @@ const About = () => (
           <span className="highlight">
             {" "}
             MongoDB, ExpressJS, React, NodeJs, Java, Spring Boot, and
-            Microservices.
+            Microservices
           </span>
           .
         </p>
