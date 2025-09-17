@@ -90,8 +90,6 @@ Here are some of my key skills highlighted in the portfolio:
 ## 📬 Connect With Me
 
 - **LinkedIn:** https://www.linkedin.com/in/akshansh-dubey  
-- **GitHub:** https://github.com/Akshansh97  
-- **Email:** akshansh.dubey@example.com  
 
 ---
 
