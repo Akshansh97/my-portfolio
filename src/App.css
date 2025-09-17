@@ -260,6 +260,7 @@ body {
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(255,126,179,0.07);
+  cursor: pointer;
 }
 
 .skills-grid span:hover {
@@ -394,7 +395,7 @@ body {
   padding: 1.8rem;
   text-align: left;
   color: #e5e7eb;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 28px rgba(255, 126, 179, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -482,6 +483,7 @@ body {
   box-shadow: 0 2px 10px rgba(255,126,179,0.07);
   animation: fadeInUp 0.6s ease forwards;
   opacity: 0;
+  cursor: pointer;
 }
 
 .tech-category .skills-grid span:hover {

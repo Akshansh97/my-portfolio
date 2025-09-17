@@ -32,20 +32,22 @@ const Header = () => {
       </h1>
 
       <nav className={`navbar-row ${isOpen ? "active" : ""}`}>
-        {["home", "about", "projects", "experience", "contact"].map((section, idx) => (
-          <Link
-            key={idx}
-            to={section}
-            smooth
-            duration={500}
-            offset={-70}
-            className="nav-link"
-            activeClass="active"
-            onClick={() => setIsOpen(false)}
-          >
-            {section.charAt(0).toUpperCase() + section.slice(1)}
-          </Link>
-        ))}
+        {["home", "about", "projects", "experience", "contact"].map(
+          (section, idx) => (
+            <Link
+              key={idx}
+              to={section}
+              smooth
+              duration={500}
+              offset={-70}
+              className="nav-link"
+              activeClass="active"
+              onClick={() => setIsOpen(false)}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </Link>
+          )
+        )}
       </nav>
 
       <div className="hamburger" onClick={toggleNavbar}>
@@ -67,7 +69,8 @@ const Home = () => (
           I specialize in building scalable web applications using
           <span className="highlight">
             {" "}
-            <br></br>MongoDB, ExpressJS, React, NodeJs, Java, Spring Boot, and Microservices
+            <br></br>MongoDB, ExpressJS, React, NodeJs, Java, Spring Boot, and
+            Microservices
           </span>
           .
         </p>
@@ -81,10 +84,7 @@ const Home = () => (
         </div>
       </div>
       <div className="hero-illustration">
-        <img
-          src="/developer_illustration.png"
-          alt="Developer illustration"
-        />
+        <img src="/developer_illustration.png" alt="Developer illustration" />
       </div>
     </div>
   </section>
@@ -96,12 +96,13 @@ const About = () => (
       <div className="about-text">
         <h2>About Me</h2>
         <p>
-          I’m <span className="highlight">Akshansh Dubey</span>, a passionate
+          A passionate
           <strong> Full-Stack Developer</strong> with experience building
           scalable and modern applications using
           <span className="highlight">
             {" "}
-            Java, Spring Boot, Microservices, React, and MySQL
+            MongoDB, ExpressJS, React, NodeJs, Java, Spring Boot, and
+            Microservices.
           </span>
           .
         </p>
@@ -115,6 +116,9 @@ const About = () => (
         <h3>Skills</h3>
         <div className="skills-grid">
           <span>Java</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>SQL</span>
           <span>Spring Boot</span>
           <span>Microservices</span>
           <span>React</span>
@@ -126,6 +130,9 @@ const About = () => (
           <span>Git & GitHub</span>
           <span>REST APIs</span>
           <span>HTML & CSS</span>
+          <span>Hibernate</span>
+          <span>HTTP</span>
+          <span>JSON</span>
         </div>
       </div>
     </div>
@@ -209,9 +216,24 @@ const Experience = () => {
 
   const technicalSkills = {
     Languages: ["Java", "JavaScript", "TypeScript", "SQL"],
-    Frameworks: ["Spring Boot", "React", "Node.js", "Express", "Angular"],
+    Backend: [
+      "Spring Boot",
+      "Node.js",
+      "Express",
+      "Hibernate",
+      "REST APIs",
+      "HTTP",
+      "JSON",
+    ],
+    Frontend: [
+      "React",
+      "Angular",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+    ],
     Databases: ["MySQL", "MongoDB"],
-    Tools: ["Git", "GitHub", "REST APIs", "Postman", "Docker"],
+    Tools: ["Git", "GitHub", "Postman", "Docker"],
   };
 
   return (
