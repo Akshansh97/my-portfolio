@@ -116,6 +116,9 @@ const About = () => (
         <h3>Skills</h3>
         <div className="skills-grid">
           <span>Java</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>SQL</span>
           <span>Spring Boot</span>
           <span>Microservices</span>
           <span>React</span>
@@ -127,6 +130,9 @@ const About = () => (
           <span>Git & GitHub</span>
           <span>REST APIs</span>
           <span>HTML & CSS</span>
+          <span>Hibernate</span>
+          <span>HTTP</span>
+          <span>JSON</span>
         </div>
       </div>
     </div>
@@ -208,16 +214,27 @@ const Experience = () => {
     },
   ];
 
-const technicalSkills = {
-  Languages: ["Java", "JavaScript", "TypeScript", "SQL"],
-  Frameworks: ["Spring Boot", "Node.js", "Express", "Angular", "Hibernate"],
-  Frontend: ["React", "HTML5", "CSS3", "Tailwind CSS", "Styled Components"],
-  Databases: ["MySQL", "MongoDB"],
-  Tools: ["Git", "GitHub", "Postman", "Docker"],
-  WebTechnologies: ["REST APIs", "HTTP", "JSON"]
-};
-
-
+  const technicalSkills = {
+    Languages: ["Java", "JavaScript", "TypeScript", "SQL"],
+    Backend: [
+      "Spring Boot",
+      "Node.js",
+      "Express",
+      "Hibernate",
+      "REST APIs",
+      "HTTP",
+      "JSON",
+    ],
+    Frontend: [
+      "React",
+      "Angular",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+    ],
+    Databases: ["MySQL", "MongoDB"],
+    Tools: ["Git", "GitHub", "Postman", "Docker"],
+  };
 
   return (
     <section className="experience" id="experience">
