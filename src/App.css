@@ -249,7 +249,10 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 0.9rem;
 }
-
+.skills-grid a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .skills-grid span {
   background: rgba(255, 255, 255, 0.14);
   padding: 0.7rem 1rem;

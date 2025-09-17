@@ -66,7 +66,7 @@ const Home = () => (
         <h1>Akshansh Dubey</h1>
         <h2>Full-Stack Developer</h2>
         <p>
-          I specialize in building scalable web applications using
+          Building scalable web applications using
           <span className="highlight">
             {" "}
             <br></br>MongoDB, ExpressJS, React, NodeJs, Java, Spring Boot, and
@@ -96,22 +96,31 @@ const About = () => (
       <div className="about-text">
         <h2>About Me</h2>
         <p>
-          A passionate
-          <strong> Full-Stack Developer</strong> with experience building
-          scalable and modern applications using
+          A passionate <strong>Full-Stack Developer</strong> with experience
+          building scalable and modern applications using
           <span className="highlight">
             {" "}
-            MongoDB, ExpressJS, React, NodeJs, Java, Spring Boot, and
+            MongoDB, ExpressJS, React, Node.js, Java, Spring Boot, and
             Microservices
           </span>
           .
         </p>
         <p>
-          I enjoy turning complex problems into simple, elegant solutions. My
-          goal is to create applications that are not only functional but also
-          intuitive and visually appealing.
+          I enjoy turning complex problems into simple, elegant solutions. I
+          thrive in collaborative environments and am always eager to learn and
+          adopt new technologies. My goal is to create applications that are not
+          only functional but also intuitive, visually appealing, and
+          maintainable.
+        </p>
+        <p>
+          I take pride in writing clean, efficient code and building products
+          that provide real value to users. Outside of coding, I enjoy exploring
+          new frameworks, contributing to open-source projects, and continuously
+          improving my skills to stay up-to-date with the latest trends in
+          software development.
         </p>
       </div>
+
       <div className="skills-card">
         <h3>Skills</h3>
         <div className="skills-grid">
@@ -225,13 +234,7 @@ const Experience = () => {
       "HTTP",
       "JSON",
     ],
-    Frontend: [
-      "React",
-      "Angular",
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
-    ],
+    Frontend: ["React", "Angular", "HTML5", "CSS3", "Tailwind CSS"],
     Databases: ["MySQL", "MongoDB"],
     Tools: ["Git", "GitHub", "Postman", "Docker"],
   };
