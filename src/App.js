@@ -25,22 +25,23 @@ const Header = () => (
     >
       Akshansh Dubey
     </h1>
-    <nav>
-      <Link to="about" smooth duration={500} offset={-70}>
+    <nav className="navbar-row">
+      <Link to="about" smooth duration={500} offset={-70} className="nav-link">
         About
       </Link>
-      <Link to="projects" smooth duration={500} offset={-70}>
+      <Link to="projects" smooth duration={500} offset={-70} className="nav-link">
         Projects
       </Link>
-      <Link to="blog" smooth duration={500} offset={-70}>
+      <Link to="blog" smooth duration={500} offset={-70} className="nav-link">
         Blog
       </Link>
-      <Link to="contact" smooth duration={500} offset={-70}>
+      <Link to="contact" smooth duration={500} offset={-70} className="nav-link">
         Contact
       </Link>
     </nav>
   </header>
 );
+
 
 const Home = () => (
   <section className="home" id="home">

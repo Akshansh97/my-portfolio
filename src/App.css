@@ -24,51 +24,73 @@ body {
   animation: fadeInDown 1s;
 }
 
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-30px);}
-  to { opacity: 1; transform: translateY(0);}
+/* Navbar Horizontal Row */
+.navbar-row {
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
 }
 
-.header h1 {
-  margin: 0;
-  color: #fffbea;
-  font-weight: 900;
-  font-size: 2.1rem;
-  letter-spacing: 2px;
-  text-shadow: 0 2px 12px #d83904;
-}
-
-.header nav a {
+.nav-link {
   color: #fff0f5;
-  margin-left: 2.2rem;
-  cursor: pointer;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.13rem;
   letter-spacing: 1px;
   transition: color 0.3s;
   position: relative;
+  padding: 0.7rem 0.5rem;
+  border-radius: 8px;
+  /* animated underline */
 }
 
-.header nav a::after {
+.nav-link::after {
   content: '';
   display: block;
   margin: auto;
   height: 3px;
   width: 0;
-  background: #ff7eb3;
-  transition: width 0.25s;
+  background: linear-gradient(90deg, #ff7eb3 50%, #ffd6e0 100%);
+  border-radius: 2px;
+  transition: width 0.27s;
 }
 
-.header nav a:hover::after,
-.header nav a.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 100%;
 }
 
-.header nav a:hover,
-.header nav a.active {
+.nav-link:hover,
+.nav-link.active {
   color: #ff7eb3;
+  background: rgba(255,126,179,0.07);
 }
+
+@media (max-width: 700px) {
+  .navbar-row {
+    gap: 0.9rem;
+  }
+  .header {
+    padding: 1rem 1rem;
+  }
+}
+
+/* ---- Keep the rest of your CSS as before for sections, cards, etc. ---- */
+
+section {
+  padding: 5rem 1.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero-glass {
+  background: rgba(255,255,255,0.02);
+  border-radius: 24px;
+  box-shadow: 0 8px 50px 0 rgba(255,120,150,0.09);
+  padding: 4rem 0 3rem 0;
+  text-align: center;
+}
+
 
 section {
   padding: 5rem 1.5rem;
@@ -205,15 +227,15 @@ h2 {
 .contact-split {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.2rem;
+  gap: 1.8rem; /* reduced gap */
   justify-content: center;
   align-items: stretch;
   background: linear-gradient(120deg, #54142f 0%, #3c1d47 100%);
   border-radius: 28px;
   box-shadow: 0 12px 48px rgba(255, 126, 179, 0.15);
-  margin: 5rem auto;
+  margin: 3rem auto; /* was 5rem */
   max-width: 1080px;
-  padding: 3rem;
+  padding: 2rem; /* was 3rem */
   animation: fadeInUp 1.2s;
 }
 
@@ -221,7 +243,7 @@ h2 {
   flex: 1 1 320px;
   background: linear-gradient(110deg, #291024 70%, #54142fE6 100%);
   border-radius: 22px;
-  padding: 2.6rem 2rem;
+  padding: 1.8rem 1.4rem; /* was 2.6rem 2rem */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -232,9 +254,9 @@ h2 {
 }
 
 .contact-info-panel h2 {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem; /* was 1.3rem */
   font-weight: 900;
-  font-size: 1.44rem;
+  font-size: 1.4rem; /* slightly smaller */
   color: #fffbea;
   text-shadow: 0 8px 28px #ff7eb3;
 }
@@ -243,14 +265,14 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.85rem;
-  font-size: 1.15rem;
-  margin-bottom: 1.1rem;
+  font-size: 1.05rem; /* was 1.15rem */
+  margin-bottom: 0.8rem; /* was 1.1rem */
 }
 
 .contact-icon {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* was 1.5rem */
   color: #ffe4e1;
-  min-width: 30px;
+  min-width: 28px;
 }
 
 .contact-text a {
@@ -258,7 +280,7 @@ h2 {
   text-decoration: none;
   font-weight: 700;
   transition: color 0.29s;
-  font-size: 1.05rem;
+  font-size: 1rem; /* was 1.05rem */
 }
 .contact-text a:hover {
   color: #f9a825;
@@ -266,15 +288,15 @@ h2 {
 }
 
 .contact-socials {
-  margin-top: 1.5rem;
+  margin-top: 1rem; /* was 1.5rem */
   display: flex;
-  gap: 1.1rem;
+  gap: 1rem;
 }
 
 .contact-illustration {
   width: 100%;
-  height: 120px;
-  margin-top: 2rem;
+  height: 80px; /* was 120px */
+  margin-top: 1rem; /* was 2rem */
   background: url('https://undraw.co/api/illustrations/undraw_mail_sent_re_m_vw0.svg') center/contain no-repeat;
   background-size: contain;
   opacity: 0.7;
@@ -291,9 +313,9 @@ h2 {
 
 .contact-form-card h3 {
   color: #fffbea;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem; /* was 1.6rem */
   font-weight: 800;
-  font-size: 1.13rem;
+  font-size: 1.1rem; /* was 1.13rem */
   text-shadow: 0 0 7px #ff7eb3;
   letter-spacing: 1px;
 }
@@ -301,17 +323,17 @@ h2 {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem; /* was 1.25rem */
   width: 100%;
   max-width: 390px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 1.05rem 1.3rem;
+  padding: 0.8rem 1rem; /* was 1.05rem 1.3rem */
   border: none;
   border-radius: 12px;
-  font-size: 1.14rem;
+  font-size: 1rem; /* was 1.14rem */
   outline: none;
   background: rgba(255,255,255,0.92);
   color: #2e2e2e;
@@ -327,13 +349,13 @@ h2 {
 }
 
 .contact-form button {
-  padding: 1.09rem 1.18rem;
+  padding: 0.9rem 1rem; /* was 1.09rem 1.18rem */
   background: linear-gradient(90deg, #ff7eb3 40%, #f9a825 120%);
   border: none;
   border-radius: 12px;
   color: #fff;
   font-weight: 800;
-  font-size: 1.16rem;
+  font-size: 1.1rem; /* was 1.16rem */
   cursor: pointer;
   transition: background 0.28s;
   box-shadow: 0 3px 12px rgba(255,126,179,0.21);
@@ -348,8 +370,8 @@ h2 {
 @media (max-width: 1100px) {
   .contact-split {
     flex-direction: column;
-    padding: 2rem;
-    gap: 1.4rem;
+    padding: 1.5rem; /* was 2rem */
+    gap: 1rem; /* was 1.4rem */
     max-width: 98vw;
   }
   .contact-info-panel,
