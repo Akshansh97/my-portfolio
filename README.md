@@ -9,7 +9,7 @@ Welcome to my personal portfolio ! This project showcases my journey as a web de
 
 Check out the live version of my portfolio:
 
-👉 [https://akshansh97.github.io/my-portfolio/](https://akshansh97.github.io/my-portfolio/)
+👉 https://akshansh-dubey-portfolio.netlify.app/
 
 ---
 
