@@ -155,13 +155,13 @@ const Projects = () => {
       description:
         "An interactive flashcard app built with Next.js and React featuring smooth 3D flip animations and responsive design.",
       tech: "Next.js, React, CSS Modules",
-      link: "https://github.com/Akshansh97/Flashcard-App",
+      link: "https://the-flashcard-app.netlify.app/",
     },
     {
       name: "OfficeRoom",
       description:
-        "Web-based office furniture management and e-commerce app with Node.js/Express, product browsing, user authentication, and checkout.",
-      tech: "Node.js, Express, JavaScript, HTML, CSS",
+        "(Beginner) Web-based office furniture management and e-commerce app with Node.js, product browsing, user authentication, and checkout.",
+      tech: "Node.js, JavaScript, HTML, CSS",
       link: "https://github.com/Akshansh97/OfficeRoom",
     },
   ];
